@@ -8,20 +8,15 @@ import { Footer } from './Components/Footer';
 import { Container } from 'react-bootstrap';
 import { useState } from 'react';
 
-
-
 function App() {
 
   const [search, setSearch]= useState('')
   const [geoCoord, setGeoCoord] = useState({ lat: '', lon: '' })
   const apiKey = 'db4990ba7fe8b5c699238237ffcd0a26'
 
-
-
-
   return (
     <>
-    <BrowserRouter> 
+    <BrowserRouter className='vh-100'> 
     <Nav/>
     <Container className='m-5 mx-auto'>
     <Routes>

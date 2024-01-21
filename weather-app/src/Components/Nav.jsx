@@ -1,17 +1,17 @@
 import React from 'react'
-import {Container, Navbar} from 'react-bootstrap'
+import {Container, Image, Navbar} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { FaSun } from "react-icons/fa";
+import logoNav from '../assets/logoNav.png'
+
 
 export const Nav = () => {
   return (
-    <Navbar bg='secondary'>
+    <Navbar bg='light'>
         <Container>
           <Navbar.Brand >
             <Link to='/' className=''>
-
-            <FaSun className='tex-light fs-1' />
-            Weather App
+            <Image src={logoNav} height='50px'></Image>
+            
             </Link>
           </Navbar.Brand>
         </Container>
